@@ -3,7 +3,7 @@ Welcome!
 Glad you intend to use ReaDDy_java for your particle-based reaction-diffusion simulations.
 This is a quick starting package that sets you up right away.
 
-Run a simulation right away:
+#### Run a simulation right away
 
 * Download or clone this repo to desired destination and run the configuration script
 
@@ -36,6 +36,12 @@ Run a simulation right away:
     │   └── tplgy_potentials.xml
     └── run.sh
 ```
+
+#### Requirements
+* Unix system with bash
+* Java runtime environment / VM (either oracle or openjdk should be fine)
+* VMD installed (see http://www.ks.uiuc.edu/Research/vmd/ )
+
 #### Further notes
 * The _bin_VMD-Visualizer automatically creates a vmd readable xyz trajectory from the readdy xml output and provides a VMD .tcl script to view it right away
 * If you are on a mac: open the .tcl script differently: Open VMD, click on 'File' in the upper left corner of the screen, click 'source' in the dropdown menu, and choose the StarterKitPath/sim/output/out_traj.xml.VMD.tcl to view it.
