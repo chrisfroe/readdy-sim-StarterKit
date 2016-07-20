@@ -5,7 +5,7 @@ if [ -z ${J_READDY_KIT+x} ]; then
     echo "The environment variable J_READDY_KIT is not set."
     exit 1
 fi
-if [ ! -D "input" ]; then
+if [ ! -d "input" ]; then
     echo "Directory 'input/' does not exist."
     echo "Make sure that 'run.sh' and 'input/' are in the same dir."
     exit 1

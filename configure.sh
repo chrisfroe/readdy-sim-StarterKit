@@ -8,10 +8,12 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Assuming that the binaries are in DIR as well, append the env J_READDY_KIT
 # to the bashrc file.
-if [ -s ~/.bashrc && -z ${J_READDY_KIT+x} ]; then
-    echo "# Set directory of readdy_java starter-kit binaries" >> ~/.bashrc
-    echo "# To remove, simply delete the directory given below and delete these 3 lines" >> ~/.bashrc
-    echo "export J_READDY_KIT=$DIR" >> ~/.bashrc
+if [ -s "$HOME/.bashrc" ] && [ -z ${J_READDY_KIT+x} ]; then
+    echo "# Set directory of readdy_java starter-kit binaries" >> $HOME/.bashrc
+    echo "# To remove, simply delete the directory given below and delete these 3 lines" >> $HOME/.bashrc
+    echo "export J_READDY_KIT=$DIR" >> $HOME/.bashrc
+    echo "environment variable J_READDY_KIT=$DIR has been appended to your bashrc."
+    echo "Restart shell or do 'source ~/.bashrc' for this to take effect."
 else
     echo "There is no ~/.bashrc or J_READDY_KIT is already set."
 fi
