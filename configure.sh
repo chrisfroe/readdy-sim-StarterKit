@@ -16,4 +16,5 @@ if [ -s "$HOME/.bashrc" ] && [ -z ${J_READDY_KIT+x} ]; then
     echo "Restart shell or do 'source ~/.bashrc' for this to take effect."
 else
     echo "There is no ~/.bashrc or J_READDY_KIT is already set."
+    exit 1
 fi
